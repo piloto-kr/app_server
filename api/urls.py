@@ -17,15 +17,18 @@ from django.contrib import admin
 from django.urls import path
 
 from feedback import views as feedback_views
-from utterance import views as utterance_views
 from survey import views as survey_views
+from userinfo import views as userinfo_views
+from utterance import views as utterance_views
+
 from download import views as dlv
 
 urlpatterns = [
     path('', dlv.hello_world),
     path('admin/', admin.site.urls),
     path('feedback/', feedback_views.FeedbackViewSet.as_view()),
-    path('utterance/', utterance_views.UtteranceViewSet.as_view()),
     path('survey/', survey_views.SurveyViewSet.as_view()),
+    path('userinfo/', userinfo_views.UserinfoViewSet.as_view()),
+    path('utterance/', utterance_views.UtteranceViewSet.as_view()),
     path('download/', dlv.download_file),
 ]

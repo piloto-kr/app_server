@@ -7,7 +7,7 @@ class Survey(models.Model):
     created_at  = models.DateTimeField(auto_now_add=True, verbose_name="작성일")
 
     def __str__(self):
-        return self.survey
+        return self.answer
 
     class Meta:
         db_table            = 'survey'

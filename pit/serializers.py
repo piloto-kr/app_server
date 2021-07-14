@@ -6,4 +6,4 @@ from .models import Pit
 class PitSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pit
-        fields = ['uuid', 'pit_type', 'checklist', 'checked_at']
+        fields = ['uuid', 'pit_type', 'checklist', 'content', 'checked_at']

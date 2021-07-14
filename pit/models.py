@@ -14,3 +14,4 @@ class Pit(models.Model):
         db_table            = 'pit'
         verbose_name        = 'Piloto Integrated Test'
         verbose_name_plural = 'Piloto Integrated Test'
+        

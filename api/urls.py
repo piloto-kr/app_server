@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from feedback import views as feedback_views
+from pit import views as pit_views
 from survey import views as survey_views
 from userinfo import views as userinfo_views
 from utterance import views as utterance_views
@@ -27,6 +28,7 @@ urlpatterns = [
     path('', dlv.hello_world),
     path('admin/', admin.site.urls),
     path('feedback/', feedback_views.FeedbackViewSet.as_view()),
+    path('pit/', pit_views.PitViewSet.as_view()),
     path('survey/', survey_views.SurveyViewSet.as_view()),
     path('userinfo/', userinfo_views.UserinfoViewSet.as_view()),
     path('utterance/', utterance_views.UtteranceViewSet.as_view()),

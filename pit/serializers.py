@@ -7,3 +7,4 @@ class PitSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pit
         fields = ['uuid', 'pit_type', 'checklist', 'content', 'checked_at']
+        

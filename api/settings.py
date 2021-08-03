@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'utterance',
     'download',
     'pit',
+    'harmful',
 ]
 
 MIDDLEWARE = [

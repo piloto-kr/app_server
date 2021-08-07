@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'download',
     'pit',
     'harmful',
+    'prefer_character'
 ]
 
 MIDDLEWARE = [

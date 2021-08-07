@@ -22,6 +22,7 @@ from pit import views as pit_views
 from survey import views as survey_views
 from userinfo import views as userinfo_views
 from utterance import views as utterance_views
+from prefer_character import views as prefer_character_views
 
 from download import views as dlv
 
@@ -35,4 +36,5 @@ urlpatterns = [
     path('userinfo/', userinfo_views.UserinfoViewSet.as_view()),
     path('utterance/', utterance_views.UtteranceViewSet.as_view()),
     path('download/', dlv.download_file),
+    path('prefer_character/', prefer_character_views.PreferCharacterViewSet.as_view())
 ]
